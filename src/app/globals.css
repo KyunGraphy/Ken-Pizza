@@ -6,3 +6,75 @@ section.hero {
     @apply grid;
     grid-template-columns: 0.4fr 0.6fr;
 }
+
+.heroImg {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 20000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 20000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 20000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---------------------------------- */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    @apply block w-full my-2 rounded-xl;
+    @apply border p-2 border-gray-300 bg-gray-100;
+}
+
+button {
+    @apply block w-full text-gray-700 font-semibold;
+    @apply border border-gray-300 rounded-xl px-6 py-2;
+}
+
+button[type="submit"] {
+    @apply border-0 bg-primary text-white;
+}
