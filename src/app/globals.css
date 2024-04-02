@@ -9,22 +9,22 @@ section.hero {
 
 .heroImg {
     -webkit-animation-name: spin;
-    -webkit-animation-duration: 20000ms;
+    -webkit-animation-duration: 48000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
 
     -moz-animation-name: spin;
-    -moz-animation-duration: 20000ms;
+    -moz-animation-duration: 48000ms;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
 
     -ms-animation-name: spin;
-    -ms-animation-duration: 20000ms;
+    -ms-animation-duration: 48000ms;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 
     animation-name: spin;
-    animation-duration: 20000ms;
+    animation-duration: 48000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -73,7 +73,7 @@ input[type="text"] {
 input[type="email"]:disabled,
 input[type="password"]:disabled,
 input[type="text"]:disabled {
-    @apply bg-gray-300 cursor-not-allowed;
+    @apply bg-gray-300 border-0 cursor-not-allowed text-gray-500;
 }
 
 button {

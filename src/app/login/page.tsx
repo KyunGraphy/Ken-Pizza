@@ -41,7 +41,7 @@ export default function Login() {
                     disabled={loginInProgress}
                 />
                 <button type="submit" disabled={loginInProgress}>
-                    Register
+                    Login
                 </button>
                 <div className="my-4 text-center text-gray-500">
                     or Login with provider
